@@ -1,0 +1,96 @@
+﻿@model ViewModel.Entities.Vm_User
+<!-- Multiple Rules Validation start -->
+<form action="/home/edit" method="POST" enctype="multipart/form-data" >
+	<section class="multiple-validation">
+		<div class="row">
+			<div class="col-md-12">
+				<div class="card">
+					<div class="card-header">
+						<h4 class="card-title">اعتبارسنجی چندین نقشی</h4>
+					</div>
+					<input asp-for="Id" style="display:none">
+					<div class="card-content">
+						<div class="card-body">
+							<div class="row">
+								<div class="col-sm-6">
+									<div class="form-group">
+										<div class="controls">
+											<input type="text" asp-for="Name" class="form-control" placeholder="نام "
+												required=""
+												data-validation-required-message="لطفا نام خود را وارد نمایید">
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-6">
+									<div class="form-group">
+										<div class="controls">
+											<input type="text" asp-for="Family" class="form-control"
+												placeholder="نام خانوادگی  " required=""
+												data-validation-required-message="لطفا فامیلی خود را وارد نمایید">
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-6">
+									<div class="form-group">
+										<div class="controls">
+											<input type="text" asp-for="Age" class="form-control" placeholder="سن   "
+												required=""
+												data-validation-required-message="لطفا سن خود را وارد نمایید">
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-6">
+									<div class="form-group">
+										<div class="controls">
+											<input type="text" asp-for="Address" class="form-control"
+												placeholder=" آدرس   " required=""
+												data-validation-required-message="لطفا آدرس خود را وارد نمایید">
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-6">
+									<div class="form-group">
+										<div class="controls">
+											<input type="text" class="form-control" asp-for="CodeNational"
+												id="readonlyInput" readonly="readonly" placeholder="کدملی   "
+												required=""
+												data-validation-required-message="لطفا کدملی خود را وارد نمایید">
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-6">
+									<div class="form-group">
+										<div class="controls">
+											<input type="File" onchange="preview_image(event);" asp-for="File"
+												data-validation-required-message="لطفا عکس خود را آپلود نمایید">
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-6">
+									<div class="form-group">
+										<div class="controls">
+											<img src="\Upload\@Model.Image" id="output_image"
+												style="width: 200px; height: 200px;" alt="">
+										</div>
+									</div>
+								</div>
+								<script>
+									function preview_image(event) {
+										var reader = new FileReader();
+										reader.onload = function () {
+											var output = document.getElementById('output_image');
+											output.src = reader.result;
+										}
+										reader.readAsDataURL(event.target.files[0]);
+									}
+								</script>
+							</div>
+							<button type="submit" class="btn btn-primary">ثبت تغییرات</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- Multiple Rule Validation end -->
+</form>

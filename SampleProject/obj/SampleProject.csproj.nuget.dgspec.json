@@ -1,0 +1,213 @@
+{
+  "format": 1,
+  "restore": {
+    "c:\\Users\\Neati\\Desktop\\0000\\Sample1\\SampleSolution\\SampleProject\\SampleProject.csproj": {}
+  },
+  "projects": {
+    "c:\\Users\\Neati\\Desktop\\0000\\Sample1\\SampleSolution\\DataLayer\\DataLayer.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "c:\\Users\\Neati\\Desktop\\0000\\Sample1\\SampleSolution\\DataLayer\\DataLayer.csproj",
+        "projectName": "DataLayer",
+        "projectPath": "c:\\Users\\Neati\\Desktop\\0000\\Sample1\\SampleSolution\\DataLayer\\DataLayer.csproj",
+        "packagesPath": "C:\\Users\\Neati\\.nuget\\packages\\",
+        "outputPath": "c:\\Users\\Neati\\Desktop\\0000\\Sample1\\SampleSolution\\DataLayer\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Neati\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[3.1.9, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[3.1.9, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[3.1.9, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.401\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "c:\\Users\\Neati\\Desktop\\0000\\Sample1\\SampleSolution\\SampleProject\\SampleProject.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "c:\\Users\\Neati\\Desktop\\0000\\Sample1\\SampleSolution\\SampleProject\\SampleProject.csproj",
+        "projectName": "SampleProject",
+        "projectPath": "c:\\Users\\Neati\\Desktop\\0000\\Sample1\\SampleSolution\\SampleProject\\SampleProject.csproj",
+        "packagesPath": "C:\\Users\\Neati\\.nuget\\packages\\",
+        "outputPath": "c:\\Users\\Neati\\Desktop\\0000\\Sample1\\SampleSolution\\SampleProject\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Neati\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {
+              "c:\\Users\\Neati\\Desktop\\0000\\Sample1\\SampleSolution\\DataLayer\\DataLayer.csproj": {
+                "projectPath": "c:\\Users\\Neati\\Desktop\\0000\\Sample1\\SampleSolution\\DataLayer\\DataLayer.csproj"
+              },
+              "c:\\Users\\Neati\\Desktop\\0000\\Sample1\\SampleSolution\\ViewModel\\ViewModel.csproj": {
+                "projectPath": "c:\\Users\\Neati\\Desktop\\0000\\Sample1\\SampleSolution\\ViewModel\\ViewModel.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "dependencies": {
+            "Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation": {
+              "target": "Package",
+              "version": "[3.1.9, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[3.1.9, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.401\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "c:\\Users\\Neati\\Desktop\\0000\\Sample1\\SampleSolution\\ViewModel\\ViewModel.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "c:\\Users\\Neati\\Desktop\\0000\\Sample1\\SampleSolution\\ViewModel\\ViewModel.csproj",
+        "projectName": "ViewModel",
+        "projectPath": "c:\\Users\\Neati\\Desktop\\0000\\Sample1\\SampleSolution\\ViewModel\\ViewModel.csproj",
+        "packagesPath": "C:\\Users\\Neati\\.nuget\\packages\\",
+        "outputPath": "c:\\Users\\Neati\\Desktop\\0000\\Sample1\\SampleSolution\\ViewModel\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Neati\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {
+              "c:\\Users\\Neati\\Desktop\\0000\\Sample1\\SampleSolution\\DataLayer\\DataLayer.csproj": {
+                "projectPath": "c:\\Users\\Neati\\Desktop\\0000\\Sample1\\SampleSolution\\DataLayer\\DataLayer.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "dependencies": {
+            "Microsoft.AspNetCore.Http": {
+              "target": "Package",
+              "version": "[2.2.2, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.401\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
