@@ -1,5 +1,5 @@
 {
-  "FilePath": "c:\\Users\\Neati\\Desktop\\0000\\Sample1\\SampleSolution\\SampleProject\\SampleProject.csproj",
+  "FilePath": "c:\\Users\\Neati\\Desktop\\SampleGet\\SampleProject\\SampleProject.csproj",
   "Configuration": {
     "ConfigurationName": "MVC-3.0",
     "LanguageVersion": "3.0",
@@ -14392,43 +14392,43 @@
   "RootNamespace": "SampleProject",
   "Documents": [
     {
-      "FilePath": "c:\\Users\\Neati\\Desktop\\0000\\Sample1\\SampleSolution\\SampleProject\\Views\\Home\\Edit.cshtml",
-      "TargetPath": "Views\\Home\\Edit.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\Neati\\Desktop\\0000\\Sample1\\SampleSolution\\SampleProject\\Views\\Shared\\_Layout.cshtml",
-      "TargetPath": "Views\\Shared\\_Layout.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\Neati\\Desktop\\0000\\Sample1\\SampleSolution\\SampleProject\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
-      "TargetPath": "Views\\Shared\\_ValidationScriptsPartial.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\Neati\\Desktop\\0000\\Sample1\\SampleSolution\\SampleProject\\Views\\_ViewStart.cshtml",
+      "FilePath": "c:\\Users\\Neati\\Desktop\\SampleGet\\SampleProject\\Views\\_ViewStart.cshtml",
       "TargetPath": "Views\\_ViewStart.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\Neati\\Desktop\\0000\\Sample1\\SampleSolution\\SampleProject\\Views\\_ViewImports.cshtml",
-      "TargetPath": "Views\\_ViewImports.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\Neati\\Desktop\\0000\\Sample1\\SampleSolution\\SampleProject\\Views\\Home\\Index.cshtml",
-      "TargetPath": "Views\\Home\\Index.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\Neati\\Desktop\\0000\\Sample1\\SampleSolution\\SampleProject\\Views\\Home\\List.cshtml",
+      "FilePath": "c:\\Users\\Neati\\Desktop\\SampleGet\\SampleProject\\Views\\Home\\List.cshtml",
       "TargetPath": "Views\\Home\\List.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\Neati\\Desktop\\0000\\Sample1\\SampleSolution\\SampleProject\\Views\\Shared\\Error.cshtml",
+      "FilePath": "c:\\Users\\Neati\\Desktop\\SampleGet\\SampleProject\\Views\\Shared\\_Layout.cshtml",
+      "TargetPath": "Views\\Shared\\_Layout.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\Neati\\Desktop\\SampleGet\\SampleProject\\Views\\Home\\Index.cshtml",
+      "TargetPath": "Views\\Home\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\Neati\\Desktop\\SampleGet\\SampleProject\\Views\\Home\\Edit.cshtml",
+      "TargetPath": "Views\\Home\\Edit.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\Neati\\Desktop\\SampleGet\\SampleProject\\Views\\Shared\\Error.cshtml",
       "TargetPath": "Views\\Shared\\Error.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\Neati\\Desktop\\SampleGet\\SampleProject\\Views\\_ViewImports.cshtml",
+      "TargetPath": "Views\\_ViewImports.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\Neati\\Desktop\\SampleGet\\SampleProject\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
+      "TargetPath": "Views\\Shared\\_ValidationScriptsPartial.cshtml",
       "FileKind": "mvc"
     }
   ],
