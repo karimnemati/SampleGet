@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "9F/zOB6QYTwLlJzf+/yuGubm6kk940a4zS+Kq17Ek2wzb7GXPMWN0Lq2KtLEdBLESVe2qGWdwDB39nSiKXAYtw==",
+  "dgSpecHash": "fXJyeI9tz0wEjdyaEVzHi3TZ3r6Me1K3mi5nv+Ky0NAycy/8yL44WYypahxX9xmEOAnEzJ9kSAumS5mc/UafJw==",
   "success": true,
-  "projectFilePath": "c:\\Users\\Neati\\Desktop\\0000\\Sample1\\SampleSolution\\DataLayer\\DataLayer.csproj",
+  "projectFilePath": "c:\\Users\\Neati\\Desktop\\SampleGet\\DataLayer\\DataLayer.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Neati\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.1.1\\microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512",
     "C:\\Users\\Neati\\.nuget\\packages\\microsoft.bcl.hashcode\\1.1.0\\microsoft.bcl.hashcode.1.1.0.nupkg.sha512",

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "OaleD/BL7kn2qy0RWKm3lddvXa1bFfe26zSk1kGQJBWuEhBBBVsYLmeUjs/FIl43Yk8xUXofGMMy6k48ABmS2A==",
+  "dgSpecHash": "+kD+rS25Dn2Ges7DOVmVGvgHCOTEpwL+MI5XDrVfcczFecPMUhsRgRnTFHrPz8owgQApfZCCrlPi+Iv76SW5+Q==",
   "success": true,
-  "projectFilePath": "c:\\Users\\Neati\\Desktop\\0000\\Sample1\\SampleSolution\\SampleProject\\SampleProject.csproj",
+  "projectFilePath": "c:\\Users\\Neati\\Desktop\\SampleGet\\SampleProject\\SampleProject.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Neati\\.nuget\\packages\\microsoft.aspnetcore.http\\2.2.2\\microsoft.aspnetcore.http.2.2.2.nupkg.sha512",
     "C:\\Users\\Neati\\.nuget\\packages\\microsoft.aspnetcore.http.abstractions\\2.2.0\\microsoft.aspnetcore.http.abstractions.2.2.0.nupkg.sha512",

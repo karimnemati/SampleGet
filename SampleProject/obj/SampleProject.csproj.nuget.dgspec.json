@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "c:\\Users\\Neati\\Desktop\\0000\\Sample1\\SampleSolution\\SampleProject\\SampleProject.csproj": {}
+    "c:\\Users\\Neati\\Desktop\\SampleGet\\SampleProject\\SampleProject.csproj": {}
   },
   "projects": {
-    "c:\\Users\\Neati\\Desktop\\0000\\Sample1\\SampleSolution\\DataLayer\\DataLayer.csproj": {
+    "c:\\Users\\Neati\\Desktop\\SampleGet\\DataLayer\\DataLayer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Users\\Neati\\Desktop\\0000\\Sample1\\SampleSolution\\DataLayer\\DataLayer.csproj",
+        "projectUniqueName": "c:\\Users\\Neati\\Desktop\\SampleGet\\DataLayer\\DataLayer.csproj",
         "projectName": "DataLayer",
-        "projectPath": "c:\\Users\\Neati\\Desktop\\0000\\Sample1\\SampleSolution\\DataLayer\\DataLayer.csproj",
+        "projectPath": "c:\\Users\\Neati\\Desktop\\SampleGet\\DataLayer\\DataLayer.csproj",
         "packagesPath": "C:\\Users\\Neati\\.nuget\\packages\\",
-        "outputPath": "c:\\Users\\Neati\\Desktop\\0000\\Sample1\\SampleSolution\\DataLayer\\obj\\",
+        "outputPath": "c:\\Users\\Neati\\Desktop\\SampleGet\\DataLayer\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -73,14 +73,14 @@
         }
       }
     },
-    "c:\\Users\\Neati\\Desktop\\0000\\Sample1\\SampleSolution\\SampleProject\\SampleProject.csproj": {
+    "c:\\Users\\Neati\\Desktop\\SampleGet\\SampleProject\\SampleProject.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Users\\Neati\\Desktop\\0000\\Sample1\\SampleSolution\\SampleProject\\SampleProject.csproj",
+        "projectUniqueName": "c:\\Users\\Neati\\Desktop\\SampleGet\\SampleProject\\SampleProject.csproj",
         "projectName": "SampleProject",
-        "projectPath": "c:\\Users\\Neati\\Desktop\\0000\\Sample1\\SampleSolution\\SampleProject\\SampleProject.csproj",
+        "projectPath": "c:\\Users\\Neati\\Desktop\\SampleGet\\SampleProject\\SampleProject.csproj",
         "packagesPath": "C:\\Users\\Neati\\.nuget\\packages\\",
-        "outputPath": "c:\\Users\\Neati\\Desktop\\0000\\Sample1\\SampleSolution\\SampleProject\\obj\\",
+        "outputPath": "c:\\Users\\Neati\\Desktop\\SampleGet\\SampleProject\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -97,11 +97,11 @@
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "c:\\Users\\Neati\\Desktop\\0000\\Sample1\\SampleSolution\\DataLayer\\DataLayer.csproj": {
-                "projectPath": "c:\\Users\\Neati\\Desktop\\0000\\Sample1\\SampleSolution\\DataLayer\\DataLayer.csproj"
+              "c:\\Users\\Neati\\Desktop\\SampleGet\\DataLayer\\DataLayer.csproj": {
+                "projectPath": "c:\\Users\\Neati\\Desktop\\SampleGet\\DataLayer\\DataLayer.csproj"
               },
-              "c:\\Users\\Neati\\Desktop\\0000\\Sample1\\SampleSolution\\ViewModel\\ViewModel.csproj": {
-                "projectPath": "c:\\Users\\Neati\\Desktop\\0000\\Sample1\\SampleSolution\\ViewModel\\ViewModel.csproj"
+              "c:\\Users\\Neati\\Desktop\\SampleGet\\ViewModel\\ViewModel.csproj": {
+                "projectPath": "c:\\Users\\Neati\\Desktop\\SampleGet\\ViewModel\\ViewModel.csproj"
               }
             }
           }
@@ -146,14 +146,14 @@
         }
       }
     },
-    "c:\\Users\\Neati\\Desktop\\0000\\Sample1\\SampleSolution\\ViewModel\\ViewModel.csproj": {
+    "c:\\Users\\Neati\\Desktop\\SampleGet\\ViewModel\\ViewModel.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Users\\Neati\\Desktop\\0000\\Sample1\\SampleSolution\\ViewModel\\ViewModel.csproj",
+        "projectUniqueName": "c:\\Users\\Neati\\Desktop\\SampleGet\\ViewModel\\ViewModel.csproj",
         "projectName": "ViewModel",
-        "projectPath": "c:\\Users\\Neati\\Desktop\\0000\\Sample1\\SampleSolution\\ViewModel\\ViewModel.csproj",
+        "projectPath": "c:\\Users\\Neati\\Desktop\\SampleGet\\ViewModel\\ViewModel.csproj",
         "packagesPath": "C:\\Users\\Neati\\.nuget\\packages\\",
-        "outputPath": "c:\\Users\\Neati\\Desktop\\0000\\Sample1\\SampleSolution\\ViewModel\\obj\\",
+        "outputPath": "c:\\Users\\Neati\\Desktop\\SampleGet\\ViewModel\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -170,8 +170,8 @@
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "c:\\Users\\Neati\\Desktop\\0000\\Sample1\\SampleSolution\\DataLayer\\DataLayer.csproj": {
-                "projectPath": "c:\\Users\\Neati\\Desktop\\0000\\Sample1\\SampleSolution\\DataLayer\\DataLayer.csproj"
+              "c:\\Users\\Neati\\Desktop\\SampleGet\\DataLayer\\DataLayer.csproj": {
+                "projectPath": "c:\\Users\\Neati\\Desktop\\SampleGet\\DataLayer\\DataLayer.csproj"
               }
             }
           }

@@ -5673,11 +5673,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "c:\\Users\\Neati\\Desktop\\0000\\Sample1\\SampleSolution\\DataLayer\\DataLayer.csproj",
+      "projectUniqueName": "c:\\Users\\Neati\\Desktop\\SampleGet\\DataLayer\\DataLayer.csproj",
       "projectName": "DataLayer",
-      "projectPath": "c:\\Users\\Neati\\Desktop\\0000\\Sample1\\SampleSolution\\DataLayer\\DataLayer.csproj",
+      "projectPath": "c:\\Users\\Neati\\Desktop\\SampleGet\\DataLayer\\DataLayer.csproj",
       "packagesPath": "C:\\Users\\Neati\\.nuget\\packages\\",
-      "outputPath": "c:\\Users\\Neati\\Desktop\\0000\\Sample1\\SampleSolution\\DataLayer\\obj\\",
+      "outputPath": "c:\\Users\\Neati\\Desktop\\SampleGet\\DataLayer\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

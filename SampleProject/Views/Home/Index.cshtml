@@ -5,25 +5,26 @@
 		<div class="row">
 			<div class="col-md-12">
 				<div class="card">
-						@if (ViewBag.msg == "اطلاعات شما با موفقیت ثبت شد") 
+					@if (ViewBag.msg == "اطلاعات شما با موفقیت ثبت شد")
 					{
-						<p class="alert alert-success text-center">@ViewBag.msg</p>
-					}else if(ViewBag.msg =="اطلاعات فردی با این کد ملی قبلا ثبت شده است")
-					{
-						<p class="alert alert-danger text-center">@ViewBag.msg</p>
+					<p class="alert alert-success text-center">@ViewBag.msg</p>
 					}
-					
+					else if (ViewBag.msg == "اطلاعات فردی با این کد ملی قبلا ثبت شده است")
+					{
+					<p class="alert alert-danger text-center">@ViewBag.msg</p>
+					}
+
 					<div class="card-header">
 						<h4 class="card-title">اعتبارسنجی چندین نقشی</h4>
 					</div>
-				
+
 					<div class="card-content">
 						<div class="card-body">
 							<div class="row">
 								<div class="col-sm-6">
 									<div class="form-group">
 										<div class="controls">
-											<input type="text" asp-for="Name"  class="form-control" placeholder="نام "
+											<input type="text" asp-for="Name" class="form-control" placeholder="نام "
 												required=""
 												data-validation-required-message="لطفا نام خود را وارد نمایید">
 										</div>
@@ -41,7 +42,7 @@
 								<div class="col-sm-6">
 									<div class="form-group">
 										<div class="controls">
-											<input type="text"  asp-for="Age" class="form-control" placeholder="سن   "
+											<input type="text" asp-for="Age" class="form-control" placeholder="سن   "
 												required=""
 												data-validation-required-message="لطفا سن خود را وارد نمایید">
 										</div>
@@ -66,10 +67,15 @@
 									</div>
 								</div>
 
-                              	<div class="col-sm-6">
+								<!--   Image Upload  -->
+
+								<div class="col-sm-6">
 									<div class="form-group">
 										<div class="controls">
-											<input type="File" onchange="preview_image(event);" asp-for="File"  required=""data-validation-required-message="لطفا عکس خود را آپلود نمایید">
+											عکس خود را انتخاب نمایید
+											<input accept="image/*" type="File" onchange="preview_image(event);"
+												asp-for="File" required=""
+												data-validation-required-message="لطفا عکس خود را آپلود نمایید">
 										</div>
 									</div>
 								</div>
@@ -77,23 +83,79 @@
 								<div class="col-sm-6">
 									<div class="form-group">
 										<div class="controls">
-											<img src="\app-assets\images\profile\img_avatar.png" id="output_image" style="width: 200px; height: 200px;" alt="">
+											<img src="\app-assets\images\profile\img_avatar.png" id="output_image"
+												style="width: 200px; height: 200px;" alt="">
 										</div>
 									</div>
 								</div>
-								
-												<script>
-													function preview_image(event) {
-														var reader = new FileReader();
-														reader.onload = function () {
-															var output = document.getElementById('output_image');
-															output.src = reader.result;
-														}
-														reader.readAsDataURL(event.target.files[0]);
 
-													}
-												</script>
-							
+								<script>
+									function preview_image(event) {
+										var reader = new FileReader();
+										reader.onload = function () {
+											var output = document.getElementById('output_image');
+											output.src = reader.result;
+										}
+										reader.readAsDataURL(event.target.files[0]);
+
+									}
+								</script>
+								<!--   Image Upload  -->
+
+								<!--   File Upload  -->
+
+								<div class="col-sm-6">
+									<div class="form-group">
+										<div class="controls">
+											فایل مورد نظر را انتخاب کنید
+											<input type="File" asp-for="FileUpload" required=""
+												data-validation-required-message="لطفا فایل خود را آپلود نمایید">
+										</div>
+									</div>
+								</div>
+								<!--   File Upload  -->
+
+								<!--   Video Upload  -->
+
+								<div class="col-sm-6">
+									<div class="form-group">
+										<div class="controls">
+											ویدیو خود را انتخاب نمایید
+											<input accept="File/*" type="File" onchange="preview_video(event);"
+												asp-for="VideoUpload" required=""
+												data-validation-required-message="لطفا ویدیو خود را آپلود نمایید">
+										</div>
+									</div>
+								</div>
+
+								<div class="col-sm-6">
+									<div class="form-group">
+										<div class="controls">
+
+
+											<video width="320" height="240" controls id="output_video">
+												<source src="movie.mp4" type="video/mp4">
+												<source src="movie.ogg" type="video/ogg">
+											</video>
+
+
+										</div>
+									</div>
+								</div>
+
+								<script>
+									function preview_video(event) {
+										var reader = new FileReader();
+										reader.onload = function () {
+											var output = document.getElementById('output_video');
+											output.src = reader.result;
+										}
+										reader.readAsDataURL(event.target.files[0]);
+
+									}
+								</script>
+								<!--   Video Upload  -->
+
 							</div>
 							<button type="submit" class="btn btn-primary">ثبت اطلاعات</button>
 						</div>
@@ -102,5 +164,5 @@
 			</div>
 		</div>
 	</section>
-<!-- Multiple Rule Validation end -->
+	<!-- Multiple Rule Validation end -->
 </form>

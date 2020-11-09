@@ -12,5 +12,8 @@ namespace DataLayer.Entities
         public string Address { get; set; }
         public string CodeNational { get; set; }
         public string Image { get; set; }
+        public string FileName { get; set; }
+        public string VideoName { get; set; }   
+
     }
 }

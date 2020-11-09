@@ -20,6 +20,9 @@
           <th>آدرس</th>
           <th>کد ملی</th>
           <th>تصویر </th>
+          <th>  دانلود فایل </th>
+          <th>  دانلود ویدیو </th>
+
           <th>اقدام</th>
         </tr>
       </thead>
@@ -42,7 +45,18 @@
                        <img src="/upload/@item.Image" alt="" style="width: 75px; height: 75px; border-radius: 50%">
                   </td>
 
-         
+                           <td class="product-price">
+                             
+                 <a href="/Upload/@item.FileName"> دانلود </a>
+
+                           </td>
+                                    <td class="product-price">
+                             
+                           <a href="/Upload/@item.VideoName"> دانلود </a>
+
+
+                           </td>
+
           <td class="product-action">
 
            <a href="/home/edit/@item.Id"><i class="feather icon-edit"></i></a>

@@ -34,3 +34,15 @@ c:\Users\Neati\Desktop\0000\Sample1\SampleSolution\ViewModel\obj\Debug\netcoreap
 c:\Users\Neati\Desktop\0000\Sample1\SampleSolution\ViewModel\obj\Debug\netcoreapp3.1\ViewModel.csproj.CopyComplete
 c:\Users\Neati\Desktop\0000\Sample1\SampleSolution\ViewModel\obj\Debug\netcoreapp3.1\ViewModel.dll
 c:\Users\Neati\Desktop\0000\Sample1\SampleSolution\ViewModel\obj\Debug\netcoreapp3.1\ViewModel.pdb
+c:\Users\Neati\Desktop\SampleGet\ViewModel\bin\Debug\netcoreapp3.1\ViewModel.deps.json
+c:\Users\Neati\Desktop\SampleGet\ViewModel\bin\Debug\netcoreapp3.1\ViewModel.dll
+c:\Users\Neati\Desktop\SampleGet\ViewModel\bin\Debug\netcoreapp3.1\ViewModel.pdb
+c:\Users\Neati\Desktop\SampleGet\ViewModel\bin\Debug\netcoreapp3.1\DataLayer.dll
+c:\Users\Neati\Desktop\SampleGet\ViewModel\bin\Debug\netcoreapp3.1\DataLayer.pdb
+c:\Users\Neati\Desktop\SampleGet\ViewModel\obj\Debug\netcoreapp3.1\ViewModel.csprojAssemblyReference.cache
+c:\Users\Neati\Desktop\SampleGet\ViewModel\obj\Debug\netcoreapp3.1\ViewModel.AssemblyInfoInputs.cache
+c:\Users\Neati\Desktop\SampleGet\ViewModel\obj\Debug\netcoreapp3.1\ViewModel.AssemblyInfo.cs
+c:\Users\Neati\Desktop\SampleGet\ViewModel\obj\Debug\netcoreapp3.1\ViewModel.csproj.CoreCompileInputs.cache
+c:\Users\Neati\Desktop\SampleGet\ViewModel\obj\Debug\netcoreapp3.1\ViewModel.csproj.CopyComplete
+c:\Users\Neati\Desktop\SampleGet\ViewModel\obj\Debug\netcoreapp3.1\ViewModel.dll
+c:\Users\Neati\Desktop\SampleGet\ViewModel\obj\Debug\netcoreapp3.1\ViewModel.pdb

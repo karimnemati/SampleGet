@@ -1,6 +1,6 @@
 ﻿@model ViewModel.Entities.Vm_User
 <!-- Multiple Rules Validation start -->
-<form action="/home/edit" method="POST" enctype="multipart/form-data" >
+<form action="/home/edit" method="POST" enctype="multipart/form-data">
 	<section class="multiple-validation">
 		<div class="row">
 			<div class="col-md-12">
@@ -58,6 +58,8 @@
 										</div>
 									</div>
 								</div>
+								<!--   Image Upload  -->
+
 								<div class="col-sm-6">
 									<div class="form-group">
 										<div class="controls">
@@ -84,6 +86,62 @@
 										reader.readAsDataURL(event.target.files[0]);
 									}
 								</script>
+
+
+								<!--   Image Upload  -->
+
+								<!--   File Upload  -->
+
+								<div class="col-sm-6">
+									<div class="form-group">
+										<div class="controls">
+											فایل مورد نظر را انتخاب کنید
+											<input type="File" asp-for="FileUpload" required=""
+												data-validation-required-message="لطفا فایل خود را آپلود نمایید">
+										</div>
+									</div>
+								</div>
+								<!--   File Upload  -->
+
+								<!--   Video Upload  -->
+
+								<div class="col-sm-6">
+									<div class="form-group">
+										<div class="controls">
+											عکس خود را انتخاب نمایید
+											<input accept="File/*" type="File" onchange="preview_video(event);"
+												asp-for="VideoUpload" required=""
+												data-validation-required-message="لطفا عکس خود را آپلود نمایید">
+										</div>
+									</div>
+								</div>
+
+								<div class="col-sm-6">
+									<div class="form-group">
+										<div class="controls">
+
+											<video width="320" height="240" controls id="output_video">
+												<source src="/Upload/@Model.VideoName" type="video/mp4">
+												<source src="/Upload/@Model.VideoName" type="video/ogg">
+											</video>
+
+										</div>
+									</div>
+								</div>
+
+								<script>
+									function preview_video(event) {
+										var reader = new FileReader();
+										reader.onload = function () {
+											var output = document.getElementById('output_video');
+											output.src = reader.result;
+										}
+										reader.readAsDataURL(event.target.files[0]);
+
+									}
+								</script>
+								<!--   Video Upload  -->
+
 							</div>
 							<button type="submit" class="btn btn-primary">ثبت تغییرات</button>
 						</div>

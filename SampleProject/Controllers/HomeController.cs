@@ -16,12 +16,12 @@ using ViewModel.Entities;
 namespace SampleProject.Controllers {
     public class HomeController : Controller {
 
-        public static string massage, NewFileName;
+        public static string massage, NewFileName,NewFileName2, NewFileName3;
 
         ////////////////////////////////////////////////////////////////////database
         private readonly Context_db db;
-        private readonly IHostingEnvironment env;
-        public HomeController (Context_db _db, IHostingEnvironment _env) {
+        private readonly IWebHostEnvironment env;
+        public HomeController (Context_db _db, IWebHostEnvironment _env) {
             db = _db;
             env = _env;
         }
@@ -54,7 +54,7 @@ namespace SampleProject.Controllers {
                 return RedirectToAction ("index");
 
             }
-            /////upload file
+            /////upload Image
             string FileExtension1 = Path.GetExtension (vmus.File.FileName);
             NewFileName = String.Concat (Guid.NewGuid ().ToString (), FileExtension1);
             var path = $"{env.WebRootPath}\\Upload\\{NewFileName}";
@@ -62,7 +62,30 @@ namespace SampleProject.Controllers {
 
                 await vmus.File.CopyToAsync (stream);
             }
+            ////end upload Image  
+
+
+              /////upload file
+            string FileExtension2 = Path.GetExtension (vmus.FileUpload.FileName);
+            NewFileName2 = String.Concat (Guid.NewGuid ().ToString (), FileExtension2);
+            var path2 = $"{env.WebRootPath}\\Upload\\{NewFileName2}";
+            using (var stream = new FileStream (path2, FileMode.Create)) {
+
+                await vmus.FileUpload.CopyToAsync (stream);
+            }
             ////end upload file  
+
+         /////upload Video
+            string FileExtension3 = Path.GetExtension (vmus.VideoUpload.FileName);
+            NewFileName3 = String.Concat (Guid.NewGuid ().ToString (), FileExtension3);
+            var path3 = $"{env.WebRootPath}\\Upload\\{NewFileName3}";
+            using (var stream = new FileStream (path3, FileMode.Create)) {
+
+                await vmus.VideoUpload.CopyToAsync (stream);
+            }
+            ////end upload Video  
+
+
 
             Tbl_User tbus = new Tbl_User () {
                 Name = vmus.Name,
@@ -70,7 +93,9 @@ namespace SampleProject.Controllers {
                 Age = vmus.Age,
                 Address = vmus.Address,
                 CodeNational = vmus.CodeNational,
-                Image = NewFileName
+                Image = NewFileName,
+                FileName=NewFileName2,
+                VideoName=NewFileName3
 
             };
             db.Tbl_Users.Add (tbus);
@@ -99,7 +124,9 @@ namespace SampleProject.Controllers {
                 Age = edituser.Age,
                 Address = edituser.Address,
                 CodeNational = edituser.CodeNational,
-                Image = edituser.Image
+                Image = edituser.Image,
+                FileName=edituser.FileName,
+                VideoName=edituser.VideoName
             };
 
             return View (vmus);
@@ -115,7 +142,7 @@ namespace SampleProject.Controllers {
             edituser.CodeNational = vmus.CodeNational;
 
             if (vmus.File != null) {
-                /////upload file
+                /////upload file Image
                 string FileExtension1 = Path.GetExtension (vmus.File.FileName);
                 NewFileName = String.Concat (Guid.NewGuid ().ToString (), FileExtension1);
                 var path = $"{env.WebRootPath}\\Upload\\{NewFileName}";
@@ -123,8 +150,35 @@ namespace SampleProject.Controllers {
 
                     await vmus.File.CopyToAsync (stream);
                 }
-                ////end upload file  
+                ////end upload file Image  
                 edituser.Image = NewFileName;
+            }
+
+            if (vmus.FileUpload != null) {
+                /////upload file
+                string FileExtension1 = Path.GetExtension (vmus.FileUpload.FileName);
+                NewFileName = String.Concat (Guid.NewGuid ().ToString (), FileExtension1);
+                var path = $"{env.WebRootPath}\\Upload\\{NewFileName}";
+                using (var stream = new FileStream (path, FileMode.Create)) {
+
+                    await vmus.FileUpload.CopyToAsync (stream);
+                }
+                ////end upload file  
+                edituser.FileName = NewFileName;
+            }
+
+
+             if (vmus.VideoUpload != null) {
+                /////upload file Video
+                string FileExtension1 = Path.GetExtension (vmus.VideoUpload.FileName);
+                NewFileName = String.Concat (Guid.NewGuid ().ToString (), FileExtension1);
+                var path = $"{env.WebRootPath}\\Upload\\{NewFileName}";
+                using (var stream = new FileStream (path, FileMode.Create)) {
+
+                    await vmus.VideoUpload.CopyToAsync (stream);
+                }
+                ////end upload file Video  
+                edituser.VideoName = NewFileName;
             }
 
             db.Tbl_Users.Update (edituser);
