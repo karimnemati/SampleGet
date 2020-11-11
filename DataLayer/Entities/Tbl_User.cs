@@ -14,6 +14,7 @@ namespace DataLayer.Entities
         public string Image { get; set; }
         public string FileName { get; set; }
         public string VideoName { get; set; }   
+        public string Description { get; set; }
 
     }
 }

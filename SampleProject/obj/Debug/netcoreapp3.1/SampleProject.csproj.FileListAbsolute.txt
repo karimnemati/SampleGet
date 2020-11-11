@@ -1533,3 +1533,4 @@ c:\Users\Neati\Desktop\SampleGet\SampleProject\obj\Debug\netcoreapp3.1\staticweb
 c:\Users\Neati\Desktop\SampleGet\SampleProject\obj\Debug\netcoreapp3.1\SampleProject.dll
 c:\Users\Neati\Desktop\SampleGet\SampleProject\obj\Debug\netcoreapp3.1\SampleProject.pdb
 c:\Users\Neati\Desktop\SampleGet\SampleProject\obj\Debug\netcoreapp3.1\SampleProject.genruntimeconfig.cache
+c:\Users\Neati\Desktop\SampleGet\SampleProject\obj\Debug\netcoreapp3.1\Razor\Views\Home\Profile.cshtml.g.cs

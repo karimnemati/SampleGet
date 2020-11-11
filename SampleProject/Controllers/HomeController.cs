@@ -16,7 +16,7 @@ using ViewModel.Entities;
 namespace SampleProject.Controllers {
     public class HomeController : Controller {
 
-        public static string massage, NewFileName,NewFileName2, NewFileName3;
+        public static string massage, NewFileName,NewFileName2, NewFileName3,NewFileName5;
 
         ////////////////////////////////////////////////////////////////////database
         private readonly Context_db db;
@@ -95,7 +95,8 @@ namespace SampleProject.Controllers {
                 CodeNational = vmus.CodeNational,
                 Image = NewFileName,
                 FileName=NewFileName2,
-                VideoName=NewFileName3
+                VideoName=NewFileName3,
+                Description=vmus.Description
 
             };
             db.Tbl_Users.Add (tbus);
@@ -113,6 +114,9 @@ namespace SampleProject.Controllers {
 
             return RedirectToAction ("list");
         }
+
+
+       
         ////////////////////////////////////////////////////////////////////edit informations
         [HttpGet]
         public IActionResult edit (int id) {
@@ -185,7 +189,103 @@ namespace SampleProject.Controllers {
             db.SaveChanges ();
             massage = "اطلاعات شما با موفقیت تغییر یافت";
             return RedirectToAction ("list");
+
         }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//          public IActionResult Profile()
+//         {
+//             return View();
+//         }
+
+//         public async Task<IActionResult> addprofile( Vm_Profile vmpr){
+
+//  /////upload Image
+//             string FileExtension5 = Path.GetExtension (vmpr.ImageUpload.FileName);
+//             NewFileName5 = String.Concat (Guid.NewGuid ().ToString (), FileExtension5);
+//             var path5 = $"{env.WebRootPath}\\Upload\\{NewFileName5}";
+//             using (var stream = new FileStream (path5, FileMode.Create)) {
+
+//                 await vmpr.ImageUpload.CopyToAsync (stream);
+//             }
+//             ////end upload Image  
+
+
+//             Tbl_Profile tbpr = new Tbl_Profile()
+//             {
+//               Name=vmpr.Name,
+//               User=vmpr.User
+              
+//             };
+
+            
+//             db.Tbl_Profiles.addprofile(tbpr);
+//             db.SaveChanges();
+//             massage="اطلاعات کاربری شما با موفقیت ثبت شد";
+
+
+
+
+
+
+
+            
+//             return View();
+//         }
 
     }
 }

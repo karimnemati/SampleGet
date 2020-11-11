@@ -14412,6 +14412,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "c:\\Users\\Neati\\Desktop\\SampleGet\\SampleProject\\Views\\Home\\Profile.cshtml",
+      "TargetPath": "Views\\Home\\Profile.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\Users\\Neati\\Desktop\\SampleGet\\SampleProject\\Views\\Home\\Edit.cshtml",
       "TargetPath": "Views\\Home\\Edit.cshtml",
       "FileKind": "mvc"

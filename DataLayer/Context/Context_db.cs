@@ -15,6 +15,7 @@ namespace DataLayer.Context
         }
 
         public DbSet<Tbl_User> Tbl_Users { get; set; }
+        public DbSet<Tbl_Profile> Tbl_Profiles {get; set;}
         
 
 

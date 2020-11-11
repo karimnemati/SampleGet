@@ -1,4 +1,37 @@
 ﻿@model ViewModel.Entities.Vm_User
+
+
+
+    <!-- BEGIN: Vendor CSS-->
+    <link rel="stylesheet" type="text/css" href="..\..\..\app-assets\vendors\css\vendors-rtl.min.css">
+    <link rel="stylesheet" type="text/css" href="..\..\..\app-assets\vendors\css\editors\quill\katex.min.css">
+    <link rel="stylesheet" type="text/css" href="..\..\..\app-assets\vendors\css\editors\quill\monokai-sublime.min.css">
+    <link rel="stylesheet" type="text/css" href="..\..\..\app-assets\vendors\css\editors\quill\quill.snow.css">
+    <link rel="stylesheet" type="text/css" href="..\..\..\app-assets\vendors\css\editors\quill\quill.bubble.css">
+    <!-- END: Vendor CSS-->
+
+    <!-- BEGIN: Theme CSS-->
+    <link rel="stylesheet" type="text/css" href="..\..\..\app-assets\css-rtl\bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="..\..\..\app-assets\css-rtl\bootstrap-extended.min.css">
+    <link rel="stylesheet" type="text/css" href="..\..\..\app-assets\css-rtl\colors.min.css">
+    <link rel="stylesheet" type="text/css" href="..\..\..\app-assets\css-rtl\components.min.css">
+    <link rel="stylesheet" type="text/css" href="..\..\..\app-assets\css-rtl\themes\dark-layout.min.css">
+    <link rel="stylesheet" type="text/css" href="..\..\..\app-assets\css-rtl\themes\semi-dark-layout.min.css">
+
+    <!-- BEGIN: Page CSS-->
+    <link rel="stylesheet" type="text/css" href="..\..\..\app-assets\css-rtl\core\menu\menu-types\horizontal-menu.min.css">
+    <link rel="stylesheet" type="text/css" href="..\..\..\app-assets\css-rtl\core\colors\palette-gradient.min.css">
+    <!-- END: Page CSS-->
+
+    <!-- BEGIN: Custom CSS-->
+    <link rel="stylesheet" type="text/css" href="..\..\..\app-assets\css-rtl\custom-rtl.min.css">
+    <link rel="stylesheet" type="text/css" href="../assets/css/style-rtl.css">
+    <!-- END: Custom CSS-->
+
+
+
+
+
 <!-- Multiple Rules Validation start -->
 <form action="/home/add" method="POST" enctype="multipart/form-data">
 	<section class="multiple-validation">
@@ -156,8 +189,14 @@
 								</script>
 								<!--   Video Upload  -->
 
+
+
+
+
+
+
+
 							</div>
-							<button type="submit" class="btn btn-primary">ثبت اطلاعات</button>
 						</div>
 					</div>
 				</div>
@@ -165,4 +204,91 @@
 		</div>
 	</section>
 	<!-- Multiple Rule Validation end -->
+
+									
+<!-- full Editor start -->
+<section class="full-editor">
+  <div class="row">
+    <div class="col-12">
+      <div class="card">
+        <div class="card-header">
+          <h4 class="card-title">ویرایشگر کامل</h4>
+        </div>
+        <div class="card-content collapse show">
+          <div class="card-body">
+            <p> به طور پیش فرض همه قالبها فعال شده و اجازه دارند در یک ویرایشگر Quill وجود داشته باشند و می توان با آنها پیکربندی شد<code>فرمت ها</code>  گزینه. این جدا از اضافه کردن کنترل در<code>نوار ابزار</code> . به عنوان مثال ، می توانید Quill را پیکربندی کنید تا محتوای پررنگ در یک ویرایشگر که هیچ نوار جادوئی در نوار ابزار ندارد ، قرار داده شود.</p>
+            <div class="row">
+              <div class="col-sm-12">
+                <div id="full-wrapper">
+                  <div id="full-container">
+					  <input type="text" asp-for="Description" style="display: none;">
+                    <div class="editor" id="des">
+
+
+                    </div>
+					<span class="alert alert-success" style="display: none;" id="msg">متن با موفقیت ارسال شد</span>
+					<a class="btn btn-info mt-2 mb	-2" onclick="send();">ارسال متن</a>
+
+					<script>
+						function send()
+						{
+							document.getElementById("Description").value=document.getElementById("des").innerHTML;
+							document.getElementById("msg").style.display=("block");
+
+						}
+					</script>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- full Editor end -->
+
+							<button type="submit" class="btn btn-primary">ثبت اطلاعات</button>
+
+
 </form>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- BEGIN: Vendor JS-->
+    <script src="..\..\..\app-assets\vendors\js\vendors.min.js"></script>
+    <!-- BEGIN Vendor JS-->
+
+    <!-- BEGIN: Page Vendor JS-->
+    <script src="..\..\..\app-assets\vendors\js\ui\jquery.sticky.js"></script>
+    <script src="..\..\..\app-assets\vendors\js\editors\quill\katex.min.js"></script>
+    <script src="..\..\..\app-assets\vendors\js\editors\quill\highlight.min.js"></script>
+    <script src="..\..\..\app-assets\vendors\js\editors\quill\quill.min.js"></script>
+    <script src="..\..\..\app-assets\vendors\js\extensions\jquery.steps.min.js"></script>
+    <script src="..\..\..\app-assets\vendors\js\forms\validation\jquery.validate.min.js"></script>
+    <!-- END: Page Vendor JS-->
+
+    <!-- BEGIN: Theme JS-->
+    <script src="..\..\..\app-assets\js\core\app-menu.min.js"></script>
+    <script src="..\..\..\app-assets\js\core\app.min.js"></script>
+    <script src="..\..\..\app-assets\js\scripts\components.min.js"></script>
+    <script src="..\..\..\app-assets\js\scripts\customizer.min.js"></script>
+    <script src="..\..\..\app-assets\js\scripts\footer.min.js"></script>
+    <!-- END: Theme JS-->
+
+    <!-- BEGIN: Page JS-->
+    <script src="..\..\..\app-assets\js\scripts\editors\editor-quill.min.js"></script>
+    <!-- END: Page JS-->

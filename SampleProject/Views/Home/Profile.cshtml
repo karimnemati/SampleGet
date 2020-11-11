@@ -1,0 +1,81 @@
+﻿@model ViewModel.Entities.Vm_Profile
+<!-- Multiple Rules Validation start -->
+<form action="/home/add" method="POST">
+	<section class="multiple-validation">
+		<div class="row">
+			<div class="col-md-12">
+				<div class="card">
+					
+					
+
+					<div class="card-header">
+						<h4 class="card-title">اعتبارسنجی چندین نقشی</h4>
+					</div>
+
+					<div class="card-content">
+						<div class="card-body">
+							<div class="row">
+								<div class="col-sm-6">
+									<div class="form-group">
+										<div class="controls">
+											<input type="text" 	asp-for="Name" class="form-control" placeholder=" نام و نام خانوادگی "
+												required=""
+												data-validation-required-message="لطفا نام و نام خانوادگی خود را وارد نمایید">
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-6">
+									<div class="form-group">
+										<div class="controls">
+											<input type="text" asp-for="User" class="form-control"
+												placeholder=" نوع عضویت " required=""
+												data-validation-required-message="لطفا نوع عضویت خود را وارد نمایید">
+										</div>
+									</div>
+								</div>
+				
+								<!--   Image Upload  -->
+
+								<div class="col-sm-6">
+									<div class="form-group">
+										<div class="controls">
+											عکس خود را انتخاب نمایید
+											<input accept="image/*" type="File" onchange="preview_image(event);"
+												asp-for="ImageUpload" required=""
+												data-validation-required-message="لطفا عکس خود را آپلود نمایید">
+										</div>
+									</div>
+								</div>
+
+								<div class="col-sm-6">
+									<div class="form-group">
+										<div class="controls">
+											<img src="\app-assets\images\profile\img_avatar.png" id="output_image"
+												style="width: 200px; height: 200px;" alt="">
+										</div>
+									</div>
+								</div>
+
+								<script>
+									function preview_image(event) {
+										var reader = new FileReader();
+										reader.onload = function () {
+											var output = document.getElementById('output_image');
+											output.src = reader.result;
+										}
+										reader.readAsDataURL(event.target.files[0]);
+
+									}
+								</script>
+								<!--   Image Upload  -->
+
+							</div>
+							<button type="submit" class="btn btn-primary">ثبت اطلاعات</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- Multiple Rule Validation end -->
+</form>

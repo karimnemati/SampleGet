@@ -15,5 +15,7 @@ namespace ViewModel.Entities {
         public IFormFile FileUpload { get; set; }
         public string VideoName { get; set; }
         public IFormFile VideoUpload { get; set; }
+        public string Description { get; set; }
+
     }
 }
