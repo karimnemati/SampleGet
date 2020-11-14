@@ -1,0 +1,84 @@
+@model ViewModel.Entities.Vm_Pay
+<!-- Multiple Rules Validation start -->
+<form  asp-action="Add" asp-controller="Pay" enctype="multipart/form-data" asp-area="" method="POST" >
+	<section class="multiple-validation">
+		<div class="row">
+			<div class="col-md-12">
+				<div class="card">
+					@if (ViewBag.msg == "اطلاعات شما با موفقیت ثبت شد")
+					{
+					<p class="alert alert-success text-center">@ViewBag.msg</p>
+					}
+					else if (ViewBag.msg == "اطلاعات فردی با این کد ملی قبلا ثبت شده است")
+					{
+					<p class="alert alert-danger text-center">@ViewBag.msg</p>
+					}
+
+					<div class="card-header">
+						<h4 class="card-title"> پرداخت آنلاین </h4>
+					</div>
+
+					<div class="card-content">
+						<div class="card-body">
+							<div class="row">
+								<div class="col-sm-6">
+									<div class="form-group">
+										<div class="controls">
+											<input type="text" asp-for="Name"  class="form-control" placeholder=" نام و نام خانوادگی "
+												required=""
+												data-validation-required-message="لطفا نام و نام خانوادگی خود را وارد نمایید">
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-6">
+									<div class="form-group">
+										<div class="controls">
+											<input type="text" asp-for="Tel" class="form-control"
+												placeholder=" شماره تلفن همراه " required=""
+												data-validation-required-message="لطفا شماره تلفن همراه خود را وارد نمایید">
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-6">
+									<div class="form-group">
+										<div class="controls">
+											<input type="email" asp-for="Email" class="form-control" placeholder="ایمیل   "
+												required=""
+												data-validation-required-message="لطفا ایمیل خود را وارد نمایید">
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-6">
+									<div class="form-group">
+										<div class="controls">
+											<input type="text" asp-for="Amonnt" class="form-control"
+												placeholder=" مبلغ   " required=""
+												data-validation-required-message="لطفا مبلغ مورد نظر خود را وارد نمایید">
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- Multiple Rule Validation end -->
+
+							<button type="submit" class="btn btn-primary">پرداخت </button>
+
+
+</form>
+
+
+
+
+
+
+
+
+
+
+
+

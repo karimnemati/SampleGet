@@ -1,0 +1,18 @@
+<div class="mt-10 text-center" >
+
+
+    <a href="/pay/Request" class="btn btn-primary">پرداخت</a>
+
+
+
+    @{
+        if (ViewBag.msg=="s")
+        {
+            <p class="alert alert-success" >پرداخت با موفقیت انجام شد</p>
+        }
+        if (ViewBag.msg=="e")
+        {
+            <p class="alert alert-danger">پرداخت ناموفق بود</p>
+        }
+    }  
+</div> 
