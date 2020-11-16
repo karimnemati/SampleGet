@@ -1538,3 +1538,4 @@ c:\Users\Neati\Desktop\SampleGet\SampleProject\bin\Debug\netcoreapp3.1\Service.d
 c:\Users\Neati\Desktop\SampleGet\SampleProject\bin\Debug\netcoreapp3.1\ZarinPal.dll
 c:\Users\Neati\Desktop\SampleGet\SampleProject\obj\Debug\netcoreapp3.1\Razor\Views\Pay\Index.cshtml.g.cs
 c:\Users\Neati\Desktop\SampleGet\SampleProject\obj\Debug\netcoreapp3.1\Razor\Views\Pay\Pay.cshtml.g.cs
+c:\Users\Neati\Desktop\SampleGet\SampleProject\obj\Debug\netcoreapp3.1\Razor\Views\Pay\List.cshtml.g.cs

@@ -14427,6 +14427,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "c:\\Users\\Neati\\Desktop\\SampleGet\\SampleProject\\Views\\Pay\\List.cshtml",
+      "TargetPath": "Views\\Pay\\List.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\Users\\Neati\\Desktop\\SampleGet\\SampleProject\\Views\\Shared\\Error.cshtml",
       "TargetPath": "Views\\Shared\\Error.cshtml",
       "FileKind": "mvc"

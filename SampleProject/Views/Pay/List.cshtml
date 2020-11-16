@@ -1,0 +1,62 @@
+﻿<!-- Data list view starts -->
+<section id="data-thumb-view" class="data-thumb-view-header">
+  @if (ViewBag.msg !=null) 
+					{
+						<p class="alert alert-warning text-center">@ViewBag.msg</p>
+					}
+	<div class="card-header">
+						<h4 class="card-title">اعتبارسنجی چندین نقشی</h4>
+					</div>
+  <!-- dataTable starts -->
+  <div class="table-responsive">
+    <table class="table data-thumb-view Aroco-table">
+      <thead>
+        <tr>
+          <th></th>
+          <th>ردیف</th>
+          <th>نام و نام خانوادگی</th>
+          <th> آدرس ایمیل </th>
+          <th>تلفن</th>
+          <th>تاریخ</th>
+          <th> مبلغ </th>
+          <th>عملیات </th>
+          <th>اقدام</th>
+        </tr>
+      </thead>
+      <tbody>
+        @if (ViewBag.list !=null)
+        {
+            int i=1;
+       
+        @foreach (var item in ViewBag.list )
+        {
+          <tr>
+          <td></td>
+          <td class="product-name"> @i</td>
+          <td class="product-category">@item.Name</td>
+          <td class="product-category">@item.Email</td>
+          <td class="product-category">@item.Tel</td>
+          <td class="product-price">@item.Amonnt</td>
+          <td class="product-price">@item.Date</td>
+          <td class="product-price">@item.Status</td>
+                         
+          <td class="product-action">
+
+           <a href="/home/edit/@item.Id"><i class="feather icon-edit"></i></a>
+
+            <a onclick="return confirm('آیا از حذف اطلاعات مورد نظر اطمینان دارید؟')" href="/home/del/@item.Id"><i class="feather icon-trash"></i></a>
+         
+          </td>
+        </tr> 
+        i++; 
+        }
+         }
+      
+
+      </tbody>
+    </table>
+  </div>
+  <!-- dataTable ends -->
+
+</section>
+<!-- Data list view end -->
