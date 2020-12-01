@@ -1,15 +1,15 @@
-namespace SampleProject.Controllers
-{
+namespace SampleProject.Controllers {
 
     using Microsoft.AspNetCore.Mvc;
 
-    public class SliderController : Controller
-    {
-        public IActionResult Index()
-        {
-            return View();
+    public class SliderController : Controller {
+        public IActionResult Index () {
+            return View ();
         }
 
-    
+        public IActionResult AddImage () {
+            return View ();
+        }
+
     }
 }

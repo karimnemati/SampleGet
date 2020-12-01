@@ -12,13 +12,11 @@ using ZarinPal.Class;
 
 namespace Sample.Controllers {
     ////////////////////////////////////////////////////////////////////database
-
-    public class PayController : Controller {
+        public class PayController : Controller {
         public static int amount1, id;
         public static string massage;
         private readonly Context_db db;
         private readonly IWebHostEnvironment env;
-
         private readonly Payment _payment;
         private readonly Authority _authority;
         private readonly Transactions _transactions;
@@ -118,7 +116,7 @@ namespace Sample.Controllers {
             return View ();
         }
         ///////////////////////////////////////////////////////////////////////////////////End Enter Informations
-          ////////////////////////////////////////////////////////////////////list
+        ////////////////////////////////////////////////////////////////////list
         public IActionResult list () {
             if (massage != null) {
                 ViewBag.msg = massage;
